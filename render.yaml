@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: suncarex-api
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: MONGODB_URI
+        value: your-mongodb-uri-here
